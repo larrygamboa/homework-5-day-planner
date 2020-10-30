@@ -26,21 +26,51 @@ $(document).ready(function () {
     //
     // Create event listeners for buttons to set items to local storage
     document.querySelector("#btn9am").addEventListener("click", function () {
-        localStorage.setItem("9AM", (inputText9am.val()));
+        localStorage.setItem("9am", (inputText9am.val()));
     });
     //
     document.querySelector("#btn10am").addEventListener("click", function () {
-        localStorage.setItem("10AM", (inputText10am.val()));
+        localStorage.setItem("10am", (inputText10am.val()));
     });
     //
     document.querySelector("#btn11am").addEventListener("click", function () {
-        localStorage.setItem("11AM", (inputText11am.val()));
+        localStorage.setItem("11am", (inputText11am.val()));
+    });
+    //
+    document.querySelector("#btn12pm").addEventListener("click", function () {
+        localStorage.setItem("12pm", (inputText12pm.val()));
+    });
+    //
+    document.querySelector("#btn1pm").addEventListener("click", function () {
+        localStorage.setItem("1pm", (inputText1pm.val()));
+    });
+    //
+    document.querySelector("#btn2pm").addEventListener("click", function () {
+        localStorage.setItem("2pm", (inputText2pm.val()));
+    });
+    //
+    document.querySelector("#btn3pm").addEventListener("click", function () {
+        localStorage.setItem("3pm", (inputText3pm.val()));
+    });
+    //
+    document.querySelector("#btn4pm").addEventListener("click", function () {
+        localStorage.setItem("4pm", (inputText4pm.val()));
+    });
+    //
+    document.querySelector("#btn5pm").addEventListener("click", function () {
+        localStorage.setItem("5pm", (inputText5pm.val()));
     });
 
     //
     // Store the content with local storage for each time slot
-    $("#inputText9am").append(localStorage.getItem("9AM"));
-    $("#inputText10am").append(localStorage.getItem("10AM"));
-    $("#inputText11am").append(localStorage.getItem("11AM"));
+    $("#inputText9am").append(localStorage.getItem("9am"));
+    $("#inputText10am").append(localStorage.getItem("10am"));
+    $("#inputText11am").append(localStorage.getItem("11am"));
+    $("#inputText12pm").append(localStorage.getItem("12pm"));
+    $("#inputText1pm").append(localStorage.getItem("1pm"));
+    $("#inputText2pm").append(localStorage.getItem("2pm"));
+    $("#inputText3pm").append(localStorage.getItem("3pm"));
+    $("#inputText4pm").append(localStorage.getItem("4pm"));
+    $("#inputText5pm").append(localStorage.getItem("5pm"));
 
 });
