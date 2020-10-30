@@ -6,10 +6,25 @@ $(document).ready(function () {
     $("#todaysDate").append(currentDay);
     // Verify the date in console
     console.log(currentDay);
-
+    
     //
     // Get current time by hour
-    var currentTime = moment().format('HH');
+    var currentTime = parseInt(moment().format('HH'));
+    // Indicate past, current, & future time blocks
+    $(".time-block").each(function () {
+        var timeBlock = parseInt($(this).attr("name"));
+        if (timeBlock < currentTime) {
+            $(this).addClass("time-block-past")
+        }
+        else if (timeBlock > currentTime) {
+            $(this).removeClass("time-block-past")
+            $(this).addClass("time-block-future")
+        }
+        else {
+            $(this).removeClass("time-block-future")
+            $(this).addClass("time-block-current")
+        }
+    });      
 
     //
     // Set up time slot variables
@@ -62,7 +77,7 @@ $(document).ready(function () {
     });
 
     //
-    // Store the content with local storage for each time slot
+    // Store the user input with local storage for each time slot
     $("#inputText9am").append(localStorage.getItem("9am"));
     $("#inputText10am").append(localStorage.getItem("10am"));
     $("#inputText11am").append(localStorage.getItem("11am"));

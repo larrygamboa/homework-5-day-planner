@@ -36,3 +36,14 @@ textarea {
     color: darkslategrey;
 }
 
+.time-block-past {
+    background-color: lightgray;
+}
+
+.time-block-current {
+    background-color: lightsalmon;
+}
+
+.time-block-future {
+    background-color: lightgreen;
+}
