@@ -10,6 +10,8 @@ $(document).ready(function () {
     //
     // Get current time by hour
     var currentTime = parseInt(moment().format('HH'));
+    // Verify current time by hour
+    console.log(currentTime);
     // Indicate past, current, & future time blocks
     $(".time-block").each(function () {
         var timeBlock = parseInt($(this).attr("name"));
