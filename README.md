@@ -27,8 +27,10 @@ The purpose of the homework is to create a work day schedule application. The wo
 4) https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 5) https://stackoverflow.com/questions/42030733/how-to-get-the-integer-value-of-month-from-moment-js
 6) https://momentjscom.readthedocs.io/en/latest/moment/01-parsing/03-string-format/
+7) https://getbootstrap.com/docs/4.5/getting-started/introduction/
 
 
+**Screenshot**
 ![alt text](https://github.com/larrygamboa/homework-5-day-planner/blob/main/assets/day-planner-screenshot.png)
 
 
